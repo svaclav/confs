@@ -2,7 +2,6 @@ export EDITOR=vim
 
 alias cd2='cd ../../'
 alias dict='dict -deng-cze $1'
-alias fdict='dict -deng-cze $1 >> /Users/vaclavstrachon/Desktop/words.txt'
 alias gca='git commit -a -m $1'
 alias ll='ls -al'
 alias ltst='ls -alrt'
