@@ -17,8 +17,6 @@ alias pgoogle='ping google.com'
 alias ssh='ssh -ACv'
 alias vuln='elinks http://lwn.net/Vulnerabilities/'
 alias hnews='elinks http://news.ycombinator.com'
-alias thermo='elinks http://physics.stackexchange.com/questions/tagged/thermodynamics'
-alias fluid='elinks http://physics.stackexchange.com/questions/tagged/fluid-dynamics'
 alias stories='elinks http://wencaaa.devio.us/stories.html'
 
 function cs () {
