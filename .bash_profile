@@ -29,7 +29,7 @@ function dvuln {
 	wget http://lwn.net/Vulnerabilities/
 	vulnid=$(egrep kernel -B 2 index.html | egrep [0-9]{6} | cut -d / -f 3)
         clear
-        echo "http://lwn.net/Vulnerabilities/$vulnid"
+        echo "http://lwn.net/Vulnerabilities/$vulnid" | lynx -
 }
 /usr/bin/ssh-add /Users/vaclavstrachon/.ssh/id_dsa
 /usr/bin/ssh-add /Users/vaclavstrachon/.ssh/id_rsa
