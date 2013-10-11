@@ -18,6 +18,7 @@ alias ssh='ssh -ACv'
 alias vuln='elinks http://lwn.net/Vulnerabilities/'
 alias hnews='elinks http://news.ycombinator.com'
 alias stories='elinks http://wencaaa.devio.us/stories.html'
+alias phistory='history | grep $1'
 
 function cs () {
 	cd $1
