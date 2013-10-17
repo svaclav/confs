@@ -11,6 +11,7 @@ alias p8='ping 8.8.8.8'
 alias pgoogle='ping google.com'
 alias ssh='ssh -ACv'
 alias phistory='history | grep $1'
+alias pgrep='pgrep -lf'
 
 function cs () {
 	cd $1
