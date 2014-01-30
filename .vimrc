@@ -1,4 +1,4 @@
 set nu
 set wildmenu
 set incsearch
-set laststatus
+set statusline+=%F
