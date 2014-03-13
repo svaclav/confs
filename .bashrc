@@ -13,6 +13,7 @@ alias p8='ping 8.8.8.8'
 alias pgoogle='ping google.com'
 alias rm='rm -f -v'
 alias ssh='ssh -ACv'
+alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
