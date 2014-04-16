@@ -17,7 +17,13 @@ alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
+function au {
+    ps auxw | grep $1 | grep -v "grep $1"
+}
+
 function cs () {
 	cd $1
 	ls -alF
 }
+
+function ff() { find . -name '*'$1'*' ; }
