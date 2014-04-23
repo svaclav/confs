@@ -22,7 +22,7 @@ function au {
 }
 
 function cs () {
-	cd $1
+	cd "$1"
 	ls -alF
 }
 
