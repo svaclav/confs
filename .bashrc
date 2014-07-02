@@ -18,7 +18,7 @@ alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
 function au {
-    ps auxw | grep $1 | grep -v "grep $1"
+    ps auxf | grep $1 | grep -v "grep $1"
 }
 
 function cs () {
