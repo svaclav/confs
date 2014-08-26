@@ -26,4 +26,4 @@ function cs () {
 	ls -alF
 }
 
-function ff() { find . -name '*'$1'*' ; }
+function ff() { find . -iname '*'$1'*' ; }
