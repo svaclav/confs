@@ -1,4 +1,5 @@
 export EDITOR=vim
+export HISTCONTROL=erasedups
 
 alias ..='cd ../'
 alias ...='cd ../../'
