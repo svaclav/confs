@@ -26,4 +26,6 @@ function cs () {
 	ls -alF
 }
 
+function a() { alias $1=cd\ $PWD; }
+
 function ff() { find . -iname '*'$1'*' ; }
