@@ -1,13 +1,16 @@
 [alias]
-	a = add
-	b = branch
+	a = add -v
+	b = branch -av
         c = commit -m
 	cl = clone
 	co = checkout
 	g = grep
 	l = log -U1
+	ls = log --oneline
 	p = push
+	pl = pull
 	st = status -sb
+	test = commit --allow-empty -m 'test commit'
 [user]
 	name = Vaclav Strachon
 	email = vaclav.strachon@gmail.com
