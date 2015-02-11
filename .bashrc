@@ -18,6 +18,16 @@ alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
+function .. (){
+    local arg=${1:-1};
+    local dir=""
+    while [ $arg -gt 0 ]; do
+        dir="../$dir"
+        arg=$(($arg - 1));
+    done
+    cd $dir #>&/dev/null
+}
+
 function au {
     ps auxf | grep $1 | grep -v "grep $1"
 }
