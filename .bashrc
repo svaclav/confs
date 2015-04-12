@@ -43,4 +43,4 @@ function cs () {
 
 function a() { alias $1=cd\ $PWD; }
 
-function ff() { find . -iname '*'$1'*' ; }
+function f() { find . -iname '*'$1'*' ; }
