@@ -4,7 +4,7 @@
         c = commit -m
 	cl = clone
 	co = checkout
-	g = grep
+	g = grep -i
 	l = log -U1
 	ls = log --oneline
 	p = push
