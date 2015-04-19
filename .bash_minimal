@@ -1,0 +1,49 @@
+export EDITOR=vim
+export HISTCONTROL=erasedups
+
+alias ..='cd ../'
+alias ...='cd ../../'
+alias cl='clear'
+alias cp='cp -v'
+alias ap='apt-get'
+alias g='git'
+alias h='hostname -f'
+alias d='df -hT'
+alias l='ls -alrth'
+alias n='ncdu'
+alias p='ps auxf'
+alias s='sudo'
+alias t='sudo netstat -tlnp'
+alias u='sudo netstat -ulnp'
+alias v='vim'
+alias mv='mv -v'
+alias gr='grep -i --color'
+alias pp='ping 8.8.8.8'
+alias rm='rm -f -v'
+alias ssh='ssh -ACv'
+alias scp='scp -v'
+alias ph='history | grep $1'
+alias pgr='pgrep -lf'
+
+function .. (){
+    local arg=${1:-1};
+    local dir=""
+    while [ $arg -gt 0 ]; do
+        dir="../$dir"
+        arg=$(($arg - 1));
+    done
+    cd $dir #>&/dev/null
+}
+
+function au {
+    ps auxf | grep $1 | grep -v "grep $1"
+}
+
+function cs () {
+	cd "$1"
+	ls -alF
+}
+
+function a() { alias $1=cd\ $PWD; }
+
+function f() { find . -iname '*'$1'*' ; }
