@@ -27,6 +27,8 @@ alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | \
+
 function .. (){
     local arg=${1:-1};
     local dir=""
