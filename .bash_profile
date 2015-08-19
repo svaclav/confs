@@ -27,6 +27,8 @@ alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='pgrep -lf'
 
+export PS1='\[\033[38;5;2m\]\u@\[\033[38;5;2m\]\h \[\033[1;33m\]\w\[\033[0m\] \[\e[1;31m\]$(git branch 2> /dev/null | sed -e '/^[^*]/d')$ \[\e[1;37m\]'
+
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | \
     sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
 
