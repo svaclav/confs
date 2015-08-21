@@ -40,6 +40,7 @@ function .. (){
         arg=$(($arg - 1));
     done
     cd $dir #>&/dev/null
+    ls -F
 }
 
 function au {
