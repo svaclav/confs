@@ -49,6 +49,10 @@ function a() { alias $1=cd\ $PWD; }
 
 function f() { sudo find . -iname '*'$1'*' ; }
 
+function jsn () {
+        python -m json.tool
+}
+
 function ta {
         sudo tac "$1" | less
 }
