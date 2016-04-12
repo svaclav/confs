@@ -6,11 +6,11 @@ alias ...='cd ../../'
 alias cl='clear'
 alias cp='cp -v'
 alias ap='sudo apt-get'
-alias g='sudo -i --color'
+alias g='sudo grep -i --color'
 alias h='hostname -f'
 alias d='df -hT'
 alias ii='sudo iptables -L -n'
-alias l='ls -alrth'
+alias l='sudo ls -alrth'
 alias m='free -m'
 alias n='sudo ncdu -x /'
 alias p='sudo ps auxf'
@@ -20,7 +20,7 @@ alias u='sudo netstat -ulnp'
 alias v='sudo vim'
 alias mv='mv -v'
 alias pp='ping 8.8.8.8'
-alias rm='rm -f -v'
+alias rm='sudo rm -f -v'
 alias ssh='ssh -ACv'
 alias scp='scp -v'
 alias ph='history | grep $1'
@@ -44,8 +44,6 @@ function cs () {
 	cd "$1"
 	ls -alF
 }
-
-function a() { alias $1=cd\ $PWD; }
 
 function f() { sudo find . -iname '*'$1'*' ; }
 
