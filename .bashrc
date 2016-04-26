@@ -1,7 +1,6 @@
 export EDITOR=vim
 export HISTCONTROL=erasedups
 
-alias ..='cd ../'
 alias ...='cd ../../'
 alias cl='clear'
 alias cp='cp -v'
@@ -64,5 +63,5 @@ function jsn () {
 }
 
 function ta {
-        sudo tac "$1" | less
+        sudo tac $1 | less
 }
