@@ -1,4 +1,5 @@
-set nu
+syntax off
+
 set wildmenu
 set incsearch
 set ignorecase
