@@ -28,6 +28,7 @@ alias ssh='ssh -ACv'
 alias scp='scp -v'
 alias phistory='history | grep $1'
 alias pgrep='sudo pgrep -lf'
+alias moon='gcal --holiday-list --astronomical-holidays'
 
 export PS1='\[\033[38;5;2m\]\u@\[\033[38;5;2m\]\h \[\033[1;33m\]\w\[\033[0m\] \[\e[1;31m\]$(git branch 2> /dev/null | sed -e '/^[^*]/d') $ \[\e[1;37m\]'
 
