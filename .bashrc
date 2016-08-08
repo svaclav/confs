@@ -59,6 +59,11 @@ function a() { alias $1=cd\ $PWD; }
 
 function f() { sudo find . -iname '*'$1'*' ; }
 
+function ips () {
+  sudo lsof -i -n | grep -oP ">(\d{1,3})(\.\d{1,3}){3}" | sort | uniq -c | sort
+}
+
+
 function jsn () {
         python -m json.tool
 }
