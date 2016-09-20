@@ -83,3 +83,6 @@ man() {
     LESS_TERMCAP_us=$(printf "\e[1;32m") \
       man "$@"
 }
+
+#ctrl-s works finally
+stty -ixon
