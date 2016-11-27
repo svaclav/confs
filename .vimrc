@@ -1,5 +1,8 @@
 syntax off
 
+set nu
+set mouse=a
+
 set wildmenu
 set incsearch
 set ignorecase
