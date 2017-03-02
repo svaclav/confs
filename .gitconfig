@@ -5,7 +5,7 @@
 	cl = clone
 	co = checkout
 	g = grep -i
-	l = log -U1
+	l = log -p --abrev-commit
 	ls = log --oneline
 	p = push
 	pl = pull
