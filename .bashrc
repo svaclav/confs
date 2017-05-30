@@ -74,6 +74,10 @@ function ta {
         sudo tac $1 | less
 }
 
+function tst() {
+    date -d @"$1"
+}
+
 man() {
   env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \
