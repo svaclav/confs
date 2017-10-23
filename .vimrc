@@ -3,6 +3,7 @@ syntax off
 set wildmenu
 set incsearch
 set ignorecase
+set number relativenumber
 set smartcase
 set softtabstop=2
 

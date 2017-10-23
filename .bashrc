@@ -5,21 +5,21 @@ alias ...='cd ../../'
 alias cl='clear'
 alias cp='cp -v'
 alias dict='dict -dfd-eng-cze $1'
-alias ap='sudo apt-get'
-alias g='sudo grep -IRi --color'
+alias ap='apt-get'
+alias g='grep -IRi --color'
 alias h='hostname -f'
 alias d='df -hT'
-alias dp='sudo dpkg -l | grep $1'
-alias ii='sudo iptables -L -n'
+alias dp='dpkg -l | grep $1'
+alias ii='iptables -L -n'
 alias l='ls -alrth'
 alias ll='last -Fia | head'
 alias m='free -h'
-alias n='sudo ncdu -x /'
-alias p='sudo ps auxf'
-alias s='sudo'
-alias t='sudo netstat -tlnp'
-alias u='sudo netstat -ulnp'
-alias v='sudo vim'
+alias n='ncdu -x /'
+alias p='ps auxf'
+alias s='sudo '
+alias t='netstat -tlnp'
+alias u='netstat -ulnp'
+alias v='vim'
 alias mv='mv -v'
 alias pp='ping 8.8.8.8'
 alias pgoogle='ping google.com'
@@ -29,7 +29,7 @@ alias scp='scp -v'
 alias passphrase='grep -oP '[a-z]{10}' /usr/share/dict/words | sed -n -e "$((RANDOM*3))p" -e "$((RANDOM*3))p" -e "$((RANDOM*3))p" | tr "\n" " "'
 #alias passphrase='nodejs --use_strict niceware | tr "," " "'
 alias phistory='history | grep $1'
-alias pgrep='sudo pgrep -lf'
+alias pgrep='pgrep -lf'
 alias moon='gcal --holiday-list --astronomical-holidays'
 
 export PS1='\[\033[38;5;2m\]\u@\[\033[38;5;2m\]\h \[\033[1;33m\]\w\[\033[0m\] \[\e[1;31m\]$(git branch 2> /dev/null | sed -e '/^[^*]/d') $ \[\e[1;37m\]'
@@ -49,7 +49,7 @@ function .. (){
 }
 
 function au {
-    sudo ps auxf | grep $1 | grep -v "grep $1"
+    ps auxf | grep $1 | grep -v "grep $1"
 }
 
 function cs () {
@@ -59,10 +59,10 @@ function cs () {
 
 function a() { alias $1=cd\ $PWD; }
 
-function f() { sudo find . -iname '*'$1'*' ; }
+function f() { find . -iname '*'$1'*' ; }
 
 function ips () {
-  sudo lsof -i -n | grep -oP ">(\d{1,3})(\.\d{1,3}){3}" | sort | uniq -c | sort
+  lsof -i -n | grep -oP ">(\d{1,3})(\.\d{1,3}){3}" | sort | uniq -c | sort
 }
 
 
@@ -71,7 +71,7 @@ function jsn () {
 }
 
 function ta {
-        sudo tac $1 | less
+        tac $1 | less
 }
 
 function tst() {
