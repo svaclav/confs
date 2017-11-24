@@ -8,7 +8,7 @@
 	l = log -p --abrev-commit
 	ls = log --oneline
 	p = push
-	pl = pull
+	pl = pull --rebase
 	st = status -sb
 	test = commit --allow-empty -m 'test commit'
 [user]
