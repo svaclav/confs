@@ -2,6 +2,7 @@ export EDITOR=vim
 export HISTCONTROL=erasedups
 
 alias ...='cd ../../'
+alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep time'
 alias cl='clear'
 alias cp='cp -v'
 alias dict='dict -dfd-eng-cze $1'
@@ -18,6 +19,7 @@ alias ll='last -Fia | head'
 alias m='free -h'
 alias n='ncdu -x /'
 alias p='ps auxf'
+alias rg='rg -iN --pretty'
 alias s='sudo '
 alias t='netstat -tlnp'
 alias u='netstat -ulnp'
