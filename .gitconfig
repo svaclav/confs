@@ -4,6 +4,7 @@
         c = commit -m
 	cl = clone
 	co = checkout
+	df = diff --cached
 	g = grep -i
 	l = log -p --abrev-commit
 	ls = log --oneline
